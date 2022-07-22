@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :student_tests
+  resources :users
   resources :students, only: [:show, :create, :update, :destroy]
   # get '/students/:id', to: 'students#show'
   # post '/students', to: 'students#create'
